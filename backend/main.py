@@ -33,6 +33,14 @@ def ingest(req: IngestRequest):
     for f in files:
         all_chunks.extend(chunk_text(f["content"]))
 
+    if not all_chunks:
+        return {
+            "status": "error",
+            "message": "No readable code/text files found in this repository.",
+            "files_found": len(files),
+            "chunks_created": 0,
+        }
+
     embed_and_store(all_chunks)
 
     return {
