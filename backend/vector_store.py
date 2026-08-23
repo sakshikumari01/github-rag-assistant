@@ -1,7 +1,7 @@
 import chromadb
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+embedding_model = TextEmbedding(model_name="BAAI/bge-small-en-v1.5")
 chroma_client = chromadb.PersistentClient(path="chroma_db")
 
 def get_collection():
@@ -11,7 +11,8 @@ def embed_and_store(chunks):
     collection = get_collection()
 
     ids = [f"chunk_{i}" for i in range(len(chunks))]
-    embeddings = embedding_model.encode(chunks).tolist()
+    embeddings = list(embedding_model.embed(chunks))
+    embeddings = [e.tolist() for e in embeddings]
 
     collection.add(
         ids=ids,
@@ -22,10 +23,10 @@ def embed_and_store(chunks):
 
 def search(query, top_k=3):
     collection = get_collection()
-    query_embedding = embedding_model.encode([query]).tolist()
+    query_embedding = list(embedding_model.embed([query]))[0].tolist()
 
     results = collection.query(
-        query_embeddings=query_embedding,
+        query_embeddings=[query_embedding],
         n_results=top_k,
     )
     return results
