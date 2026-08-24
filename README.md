@@ -136,6 +136,13 @@ This project is open source and available for learning purposes.
 - Tested and confirmed working with small repositories such as [kennethreitz/samplemod](https://github.com/kennethreitz/samplemod).
 
 
+## 🔗 Live Links
+
+- **Live Demo:** [github-rag-assistant-three.vercel.app](https://github-rag-assistant-three.vercel.app)
+- **Backend API:** [github-rag-assistant.onrender.com/docs](https://github-rag-assistant.onrender.com/docs)
+
+> ⚠️ Note: Hosted on free-tier services — first request may take 30-50s (cold start), and works best with small-to-medium repos. See Known Limitations below.
+
 ## 👩‍💻 Author
 **Prem Kumar Gupta**
 
