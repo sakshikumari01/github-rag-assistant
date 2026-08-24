@@ -16,7 +16,7 @@ function App() {
     setIngestStatus("");
     setIngestDone(false);
     try {
-      const res = await fetch("http://127.0.0.1:8000/ingest", {
+      const res = await fetch("https://github-rag-assistant.onrender.com/ingest", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ github_url: githubUrl }),
@@ -35,7 +35,7 @@ function App() {
     setLoading(true);
     setAnswer("");
     try {
-      const res = await fetch("http://127.0.0.1:8000/chat", {
+      const res = await fetch("https://github-rag-assistant.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: query }),
