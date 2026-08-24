@@ -120,6 +120,12 @@ Frontend runs at `http://localhost:5173`.
 - [ ] Deploy backend (Render) + frontend (Vercel) for a live demo
 - [ ] Add retrieval evaluation metrics (RAGAS)
 
+## 🔗 Live Links
+
+- **Live Demo:** [github-rag-assistant-three.vercel.app](https://github-rag-assistant-three.vercel.app)
+- **Backend API:** [github-rag-assistant.onrender.com/docs](https://github-rag-assistant.onrender.com/docs)
+
+> ⚠️ Note: Hosted on free-tier services — first request may take 30-50s (cold start), and works best with small-to-medium repos. See Known Limitations below.
 
 ## ⚠️ Known Limitations
 
@@ -128,12 +134,6 @@ Frontend runs at `http://localhost:5173`.
 - Tested and confirmed working with small repositories such as [kennethreitz/samplemod](https://github.com/kennethreitz/samplemod).
 
 
-## 🔗 Live Links
-
-- **Live Demo:** [github-rag-assistant-three.vercel.app](https://github-rag-assistant-three.vercel.app)
-- **Backend API:** [github-rag-assistant.onrender.com/docs](https://github-rag-assistant.onrender.com/docs)
-
-> ⚠️ Note: Hosted on free-tier services — first request may take 30-50s (cold start), and works best with small-to-medium repos. See Known Limitations below.
 
 ## 📄 License
 
