@@ -129,6 +129,13 @@ This project is open source and available for learning purposes.
 <p align="center">Built as a learning project to understand Retrieval Augmented Generation end-to-end.</p>
 
 
+## ⚠️ Known Limitations
+
+- **Free-tier hosting timeout:** The live demo is deployed on Render's free tier, which has a ~30 second request timeout. This limits the `/ingest` endpoint to small-to-medium repositories in this demo — larger repos (500+ chunks) may time out. In a production environment, this would be solved with a background job queue (e.g., Celery or a cloud task queue), where ingestion runs asynchronously and the user receives immediate confirmation while indexing continues in the background.
+- **Cold starts:** Free-tier instances spin down after inactivity, so the first request after idle time may take 30-50 seconds to respond while the server wakes up.
+- Tested and confirmed working with small repositories such as [kennethreitz/samplemod](https://github.com/kennethreitz/samplemod).
+
+
 ## 👩‍💻 Author
 **Prem Kumar Gupta**
 
