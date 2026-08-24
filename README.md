@@ -120,14 +120,6 @@ Frontend runs at `http://localhost:5173`.
 - [ ] Deploy backend (Render) + frontend (Vercel) for a live demo
 - [ ] Add retrieval evaluation metrics (RAGAS)
 
-## 📄 License
-
-This project is open source and available for learning purposes.
-
----
-
-<p align="center">Built as a learning project to understand Retrieval Augmented Generation end-to-end.</p>
-
 
 ## ⚠️ Known Limitations
 
@@ -142,6 +134,14 @@ This project is open source and available for learning purposes.
 - **Backend API:** [github-rag-assistant.onrender.com/docs](https://github-rag-assistant.onrender.com/docs)
 
 > ⚠️ Note: Hosted on free-tier services — first request may take 30-50s (cold start), and works best with small-to-medium repos. See Known Limitations below.
+
+## 📄 License
+
+This project is open source and available for learning purposes.
+
+---
+
+<p align="center">Built as a learning project to understand Retrieval Augmented Generation end-to-end.</p>
 
 ## 👩‍💻 Author
 **Prem Kumar Gupta**
