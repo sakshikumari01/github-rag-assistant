@@ -141,7 +141,7 @@ This project is open source and available for learning purposes.
 
 ---
 
-<p align="center">Built as a learning project to understand Retrieval Augmented Generation end-to-end.</p>
+<p align="center">Built as learning project to understand Retrieval Augmented Generation end-to-end.</p>
 
 ## 👩‍💻 Author
 
