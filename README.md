@@ -147,6 +147,6 @@ This project is open source and available for learning purposes.
 
 **Prem_Kumar_Gupta**
 
-**Sakshi Kumari**
+**Sakshi_Kumari**
 
 [GitHub](https://github.com/sakshikumari01)
